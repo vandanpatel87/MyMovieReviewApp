@@ -1,5 +1,10 @@
 MyMovieReviewApp::Application.routes.draw do
-  resources :movies
+  resources :reviews
+
+
+  resources :movies do
+    resources :reviews
+  end
 
 
   # The priority is based upon order of creation:
